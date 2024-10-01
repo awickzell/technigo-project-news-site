@@ -1,4 +1,226 @@
-html {
-  background: #0025ff;
-  color: #fff;
+/* Grundinställningar */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+nav {
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Huvudinnehåll */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.articles,
+.sidebar {
+  flex-basis: 24%;
+}
+
+.articles {
+  margin-right: 2%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Artiklar */
+.articles {
+  flex: 4;
+  margin-right: 20px;
+}
+
+article {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.breaking-news {
+  color: red;
+  margin-right: 10px;
+}
+
+.with-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Sidokolumn */
+.sidebar {
+  flex: 2;
+  max-width: 300px;
+}
+
+/* Poängtabell */
+.league-table {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.league-table h3 {
+  margin: 0 0 10px;
+}
+
+.league-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.league-table th,
+.league-table td {
+  text-align: left;
+  padding: 5px;
+}
+
+.league-table th {
+  background-color: #222;
+  color: white;
+}
+
+.league-table button {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.league-table button:hover {
+  background-color: #555;
+}
+
+/* Annons */
+.ad-box {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 20px;
+}
+
+.ad-box p {
+  margin: 0;
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ad-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+/* Anpassa layout för skärmar mindre än 1024px (Tablet - 2 kolumner) */
+@media screen and (max-width: 1024px) {
+
+  .articles,
+  .sidebar {
+    flex-basis: 48%;
+    /* 2 kolumner */
+    margin-right: 2%;
+  }
+
+  .articles {
+    margin-right: 0;
+  }
+}
+
+/* Anpassa layout för skärmar mindre än 768px (Mobil - 1 kolumn) */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .articles,
+  .sidebar {
+    flex-basis: 100%;
+    /* 1 kolumn */
+    margin-right: 0;
+  }
+
+  .ad-box {
+    position: static;
+  }
 }

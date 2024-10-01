@@ -1,23 +1,170 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>News Site</title>
-    <link rel="stylesheet" href="./style.css" />
-    <!-- dont forget the meta tag for responsiveness -->
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-    </header>
+<html lang="sv">
 
-    <section class="big-news">
-      <!-- The big news content -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fotbollsnyheter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header med meny -->
+  <header>
+    <nav>
+      <h1>FOTBOLLSNYHETER</h1>
+      <ul>
+        <li><a href="https://www.fotbolsnyheter.se/svenska-ligor">Svenska ligor</a></li>
+        <li><a href="https://www.fotbolsnyheter.se/europeiska-ligor">Europeiska ligor</a></li>
+        <li><a href="https://www.fotbolsnyheter.se/varlden">Världen</a></li>
+        <li><a href="https://www.fotbolsnyheter.se/bloggar-kronikor">Bloggar & Krönikor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Huvudsektion -->
+  <div class="main-content">
+    <section class="articles">
+
+      <!-- Artiklar -->
+      <article>
+        <a href="https://www.fotbollsnyheter.se/artiklar/arsenal-tranare-sparken">
+          <h2><span class="breaking-news">JUST NU:</span>Arsenals tränare får sparken</h2>
+          <p>➤ Arsenals styrelse beslutade att avsluta samarbetet med tränaren efter svaga resultat</p>
+        </a>
+      </article>
+
+      <article>
+        <a href="https://www.fotbollsnyheter.se/artiklar/messi-tillbaka-barca">
+          <h2><span class="breaking-news">JUST NU:</span>Messi återvänder till Barcelona</h2>
+          <p>➤ En comeback som många har väntat på - Messi återvänder till sitt gamla lag efter flera år i PSG</p>
+        </a>
+      </article>
+
+      <article class="with-image">
+        <a href="https://www.fotbollsnyheter.se/artiklar/real-vinner-el-clasico">
+          <img src="assets/Bild1.jpg" alt="Real Madrid vinner El Clasico">
+          <h2>Real Madrid vinner El Clasico</h2>
+          <p>➤ Real Madrid besegrade Barcelona med 2-1 i en dramatisk match på Camp Nou</p>
+        </a>
+      </article>
+
+      <article class="with-image">
+        <a href="https://www.fotbollsnyheter.se/artiklar/kris-i-ostersund">
+          <img src="assets/Bild2.jpg" alt="Kris i Östersund">
+          <h2>Östersund i kris - fansen kräver förändringar</h2>
+          <p>➤ Efter en rad svaga resultat höjs nu röster om förändringar inom Östersunds organisation</p>
+        </a>
+      </article>
+
+      <article class="with-image">
+        <a href="https://www.fotbollsnyheter.se/artiklar/hammarby-narmar-sig-toppen">
+          <img src="assets/Bild3.jpg" alt="Hammarby närmar sig toppstriden">
+          <h2>AIK närmar sig toppstriden</h2>
+          <p>➤ Efter en imponerande vinst mot serieledarna Malmö är AIK nu med i kampen om guldet</p>
+        </a>
+      </article>
+
+      <article class="with-image">
+        <a href="https://www.fotbollsnyheter.se/artiklar/brasilien-vinner">
+          <img src="assets/Bild4.jpg" alt="Brasilien vinner mot Mexiko">
+          <h2>Brasilien vinner över Mexiko</h2>
+          <p>➤ I en het match drog Brasilien det längsta strået med en övertygande seger</p>
+        </a>
+      </article>
     </section>
 
-    <section class="">
-      <!-- The other news  -->
-    </section>
-  </body>
+    <!-- Sidokolumn -->
+    <aside class="sidebar">
+      <!-- Poängtabeller -->
+      <div class="league-table">
+        <h3>Allsvenskan</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Lag</th>
+              <th>Poäng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Malmö FF</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Hammarby</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>AIK</td>
+              <td>47</td>
+            </tr>
+            <tr>
+              <td>Djurgården</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>IFK Göteborg</td>
+              <td>43</td>
+            </tr>
+          </tbody>
+        </table>
+        <button>SE HELA TABELLEN</button>
+      </div>
+
+      <div class="league-table">
+        <h3>Superettan</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Lag</th>
+              <th>Poäng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Östers IF</td>
+              <td>52</td>
+            </tr>
+            <tr>
+              <td>J-Södra</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Trelleborg</td>
+              <td>48</td>
+            </tr>
+            <tr>
+              <td>Landskrona</td>
+              <td>46</td>
+            </tr>
+            <tr>
+              <td>Norrby</td>
+              <td>44</td>
+            </tr>
+          </tbody>
+        </table>
+        <button>SE HELA TABELLEN</button>
+      </div>
+
+      <!-- Annons -->
+      <div class="ad-box">
+        <a href="https://www.coca-cola.com/se/sv">
+          <p>ANNONS</p>
+          <img src="assets/Reklam.jpg" alt="Reklam från Coca-Cola">
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Arvid Wickzell</p>
+    <img src="assets/logo.svg" alt="Technigo logotyp">
+  </footer>
+
+</body>
+
 </html>
